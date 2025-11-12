@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Peta Lokasi | Laman Informasi Di Sabah</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="font-sans bg-white text-gray-800">
+
+  <!-- Navigasi -->
+  <nav class="fixed w-full bg-white shadow z-50">
+    <div class="container mx-auto flex justify-between items-center px-6 py-3">
+      <div class="flex items-center space-x-2">
+        <span class="text-blue-600 text-xl">📍</span>
+        <h1 class="font-bold text-lg">Laman Informasi Di Sabah</h1>
+      </div>
+      <div class="space-x-6">
+        <a href="index.html" class="hover:text-blue-600">Laman Utama</a>
+        <a href="tempat.html" class="hover:text-blue-600">Tempat Menarik</a>
+        <a href="peta.html" class="text-blue-600 font-semibold">Peta Lokasi</a>
+        <a href="rujukan.html" class="hover:text-blue-600">Sumber Rujukan</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Peta Lokasi -->
+  <section class="pt-24 pb-16 text-center">
+    <h3 class="text-3xl font-bold mb-4 border-b-4 border-blue-500 inline-block">Peta Lokasi</h3>
+    <h4 class="text-xl font-semibold mt-2 mb-6 text-gray-700">Lokasi Gunung Kinabalu</h4>
+    <div id="map" class="h-96 w-11/12 md:w-3/4 mx-auto rounded-2xl shadow-lg"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200 py-10 text-center">
+    <h4 class="font-bold text-xl">Laman Informasi Di Sabah</h4>
+    <p class="text-sm text-gray-400 mb-4">Menjelajahi keindahan Tanah di Bawah Bayu</p>
+    <div class="flex justify-center space-x-6 mb-4">
+      <a href="index.html" class="hover:text-white">Laman Utama</a>
+      <a href="tempat.html" class="hover:text-white">Tempat Menarik</a>
+      <a href="peta.html" class="text-blue-400 hover:text-white">Peta Lokasi</a>
+      <a href="rujukan.html" class="hover:text-white">Sumber Rujukan</a>
+    </div>
+    <p class="text-xs text-gray-500">© 2025 Laman Informasi Di Sabah. Hak Cipta Terpelihara.</p>
+  </footer>
+
+  <!-- Leaflet Map Script -->
+  <script>
+    var map = L.map('map').setView([6.083, 116.558], 10);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+    L.marker([6.083, 116.558]).addTo(map)
+      .bindPopup('<b>Gunung Kinabalu</b><br>Gunung tertinggi di Malaysia.')
+      .openPopup();
+  </script>
+
+</body>
+</html>

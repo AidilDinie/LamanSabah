@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tempat Menarik | Laman Informasi Di Sabah</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    .aspect-video {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+    .aspect-video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body class="font-sans bg-blue-50 text-gray-800">
+
+  <!-- Navigasi -->
+  <nav class="fixed w-full bg-white shadow z-50">
+    <div class="container mx-auto flex justify-between items-center px-6 py-3">
+      <div class="flex items-center space-x-2">
+        <span class="text-blue-600 text-xl">📍</span>
+        <h1 class="font-bold text-lg">Laman Informasi Di Sabah</h1>
+      </div>
+      <div class="space-x-6">
+        <a href="index.html" class="hover:text-blue-600">Laman Utama</a>
+        <a href="tempat.html" class="text-blue-600 font-semibold">Tempat Menarik</a>
+        <a href="peta.html" class="hover:text-blue-600">Peta Lokasi</a>
+        <a href="rujukan.html" class="hover:text-blue-600">Sumber Rujukan</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Tempat Menarik -->
+  <section class="pt-24 pb-16 text-center">
+    <h3 class="text-3xl font-bold mb-10 border-b-4 border-blue-500 inline-block">Tempat Menarik</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 text-left max-w-6xl mx-auto">
+
+      <!-- Gunung Kinabalu -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div class="aspect-video">
+          <iframe src="https://www.youtube.com/embed/JGOZvB0Q3Fw?si=fUzHa6wL9DruxXac&amp;controls=0" title="Gunung Kinabalu" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="p-6">
+          <h4 class="font-bold text-xl mb-2">Gunung Kinabalu</h4>
+          <p class="text-gray-700">Gunung tertinggi di Malaysia dan Tapak Warisan Dunia UNESCO.</p>
+        </div>
+      </div>
+
+      <!-- Taman Laut Tunku Abdul Rahman -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div class="aspect-video">
+          <iframe src="https://www.youtube.com/embed/9Z6JSxNoujk?si=WpWJa0nDueMhtA1l&amp;controls=0" title="Taman Laut Tunku Abdul Rahman" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="p-6">
+          <h4 class="font-bold text-xl mb-2">Taman Laut Tunku Abdul Rahman</h4>
+          <p class="text-gray-700">Pulau dengan pantai cantik dan aktiviti snorkeling yang popular.</p>
+        </div>
+      </div>
+
+      <!-- Kundasang -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div class="aspect-video">
+          <iframe src="https://www.youtube.com/embed/SbnDLxuzWJQ?si=7UKehMjMCBstny9y&amp;controls=0" title="Kundasang" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="p-6">
+          <h4 class="font-bold text-xl mb-2">Kundasang</h4>
+          <p class="text-gray-700">Pekan sejuk berhampiran Gunung Kinabalu, terkenal dengan ladang tenusu dan sayur.</p>
+        </div>
+      </div>
+
+      <!-- Pulau Semporna -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div class="aspect-video">
+          <iframe src="https://www.youtube.com/embed/TEYil-0RNi8?si=hbW0aLjraNVSttvS&amp;controls=0" title="Pulau Semporna" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="p-6">
+          <h4 class="font-bold text-xl mb-2">Pulau Semporna</h4>
+          <p class="text-gray-700">Gerbang ke pulau menyelam bertaraf dunia seperti Sipadan dan Mabul.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200 py-10 text-center">
+    <h4 class="font-bold text-xl">Laman Informasi Di Sabah</h4>
+    <p class="text-sm text-gray-400 mb-4">Menjelajahi keindahan Tanah di Bawah Bayu</p>
+    <div class="flex justify-center space-x-6 mb-4">
+      <a href="index.html" class="hover:text-white">Laman Utama</a>
+      <a href="tempat.html" class="text-blue-400 hover:text-white">Tempat Menarik</a>
+      <a href="peta.html" class="hover:text-white">Peta Lokasi</a>
+      <a href="rujukan.html" class="hover:text-white">Sumber Rujukan</a>
+    </div>
+    <p class="text-xs text-gray-500">© 2025 Laman Informasi Di Sabah. Hak Cipta Terpelihara.</p>
+  </footer>
+
+</body>
+</html>
