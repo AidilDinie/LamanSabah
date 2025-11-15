@@ -1,34 +1,18 @@
 <!DOCTYPE html>
 <html lang="ms">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Laman Utama | Laman Informasi Di Sabah</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <style>
     html { scroll-behavior: smooth; }
   </style>
 </head>
 <body class="font-sans bg-gray-50 text-gray-800">
 
-  <!-- Navigasi -->
-  <nav class="fixed w-full bg-white shadow z-50">
-    <div class="container mx-auto flex justify-between items-center px-6 py-3">
-      <div class="flex items-center space-x-2">
-        <span class="text-blue-600 text-xl">📍</span>
-        <h1 class="font-bold text-lg">Laman Informasi Di Sabah</h1>
-      </div>
-      <div class="space-x-6">
-        <a href="index.html" class="text-blue-600 font-semibold">Laman Utama</a>
-        <a href="tempat.html" class="hover:text-blue-600">Tempat Menarik</a>
-        <a href="peta.html" class="hover:text-blue-600">Peta Lokasi</a>
-        <a href="rujukan.html" class="hover:text-blue-600">Sumber Rujukan</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="relative h-screen bg-cover bg-center" style="background-image: url('gambar-sabah.png');">
+  <!-- Hero Section memenuhi separuh laman dan responsif -->
+  <section class="relative min-h-[100vh] md:min-h-[90vh] lg:min-h-[80vh] bg-cover bg-center" style="background-image: url('gambar-sabah.png');">
     <div class="absolute inset-0 bg-black bg-opacity-50"></div>
     <div class="relative z-10 flex items-center justify-center h-full text-white text-center">
       <div class="bg-gray-800 bg-opacity-80 p-8 rounded-lg max-w-xl">
@@ -38,6 +22,22 @@
       </div>
     </div>
   </section>
+
+  <!-- Navigasi selepas gambar hero -->
+  <nav class="bg-white shadow z-40 relative">
+    <div class="container mx-auto flex justify-center items-center px-6 py-3">
+      <div class="flex items-center space-x-2">
+        <span class="text-blue-600 text-xl">📍</span>
+        <h1 class="font-bold text-lg">Laman Informasi Di Sabah</h1>
+      </div>
+      <div class="space-x-6 ml-6">
+        <a href="index.html" class="text-blue-600 font-semibold">Laman Utama</a>
+        <a href="tempat.html" class="hover:text-blue-600">Tempat Menarik</a>
+        <a href="peta.html" class="hover:text-blue-600">Peta Lokasi</a>
+        <a href="rujukan.html" class="hover:text-blue-600">Sumber Rujukan</a>
+      </div>
+    </div>
+  </nav>
 
   <!-- Tentang -->
   <section class="py-16 bg-gray-50 text-center">
@@ -76,8 +76,10 @@
     </div>
     <p class="text-xs text-gray-500">© 2025 Laman Informasi Di Sabah. Hak Cipta Terpelihara.</p>
   </footer>
-<!-- Elfsight Background Music | Untitled Background Music -->
-<script src="https://elfsightcdn.com/platform.js" async></script>
-<div class="elfsight-app-39991e96-1196-4294-b99b-8a9511740443" data-elfsight-app-lazy></div>
+
+  <!-- Elfsight Background Music -->
+  <script src="https://elfsightcdn.com/platform.js" async></script>
+  <div class="elfsight-app-39991e96-1196-4294-b99b-8a9511740443" data-elfsight-app-lazy></div>
+
 </body>
 </html>
